@@ -1,3 +1,38 @@
 strong {
   color:red
 }
+
+.sidebars {
+  text-align: center;
+  color: white;
+  background-color: purple;
+  min-height: calc(100vh - 20vh);
+}
+
+.header {
+  text-align: center;
+  color: white;
+  background-color: blue;
+  height: 10vh;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  background-color: blue;
+  position: fixed;
+  bottom: 0px;
+  height: 10vh;
+
+}
+
+.content {
+  text-align: center;
+  color: white; 
+  background-color: rgb(173, 23, 23);
+  min-height: calc(100vh - 20vh);
+}
+
+.pure-g > div {
+  box-sizing: border-box;
+}

@@ -1,7 +1,11 @@
 from flask import Flask
 from flask import request, render_template
+import os
+
 
 app = Flask(__name__)
+
+names = [os.environ["FIRST_NAME_IN_LIST"]]
 
 @app.route("/")
 def index():
@@ -21,3 +25,7 @@ def add_to_guestbook():
    if request.form.get("name"):
       guestbook.append(request.form.get("name"))
    return render_template("index.html", guestbook=guestbook)
+
+@app.route("/frontend")
+def frontend():
+    return render_template("holy_grail.html")
